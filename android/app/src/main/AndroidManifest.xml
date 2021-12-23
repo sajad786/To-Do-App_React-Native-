@@ -10,6 +10,7 @@
       android:roundIcon="@mipmap/ic_launcher_round"
       android:allowBackup="false"
       android:theme="@style/AppTheme">
+      <!-- splash Screen code added below -->
       <activity
       android:name=".SplashActivity"
       android:theme="@style/SplashTheme"
@@ -19,6 +20,7 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
+      <!-- splash screen lines added above  -->
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
