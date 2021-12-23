@@ -21,7 +21,7 @@ const Home = () => {
   const [courseGoals, setCourseGoals] = useState([]);
   const [modalVisible, setModalVisible] = useState(false);
   const [editedText, setEditedText] = useState('');
-  const [currentId, setCurrentId] = useState();
+  const [currentId, setCurrentId] = useState('');
 
   const getText = enteredText => {
     setEnteredGoal(enteredText);
@@ -32,6 +32,7 @@ const Home = () => {
       ...currentGoal,
       {id: Math.random().toString(), value: enteredGoal},
     ]);
+    setEnteredGoal('')
   };
 
 
